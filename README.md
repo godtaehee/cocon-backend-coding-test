@@ -1,2 +1,3 @@
 # cocon-backend-coding-test
-This is Cocon-Backend-Coding-Test Private Repository
+
+### 2020.06.18 AM 03:34 Create Repository And Done "Hello World" using TypeScript
