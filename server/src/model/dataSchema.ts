@@ -1,4 +1,5 @@
-import { Schema } from "mongoose";
+import {Schema} from "mongoose";
+
 const dataSchema = new Schema({
     data: {
         type: String,

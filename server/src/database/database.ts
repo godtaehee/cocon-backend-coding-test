@@ -1,7 +1,7 @@
-import * as Mongoose from "mongoose";
+import Mongoose from "mongoose";
+
 let database: Mongoose.Connection;
 export const connect = () => {
-    // add your own uri below
     const uri = "mongodb+srv://root:root@cocon-backend-coding-te.9kn59.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
     if (database) {
         return;
