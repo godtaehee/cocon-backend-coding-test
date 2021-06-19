@@ -4,9 +4,14 @@ import {DataModel} from "../model/dataModel";
 
 export const getMetaData = async (req: Request, res: Response) => {
 
+    res.set({
+        'Accept':'application/json',
+        'Content-Type': 'application/json'
+    });
     const {url} = req.body;
 
     let result;
+
 
     ogs({url}, async (err, ret) => {
         result = ret;
@@ -27,6 +32,8 @@ export const getMetaData = async (req: Request, res: Response) => {
 }
 
 export const getMetaDatas = async (req: Request, res: Response) => {
+
+    res.set('Accept','application/json');
 
     const data = await DataModel.find();
     const datas = [];
