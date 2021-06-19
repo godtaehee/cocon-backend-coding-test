@@ -1,4 +1,4 @@
-import * as Mongoose from "mongoose";
+import Mongoose from "mongoose";
 let database: Mongoose.Connection;
 export const connect = () => {
     // add your own uri below
