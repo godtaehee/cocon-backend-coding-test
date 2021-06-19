@@ -3,7 +3,8 @@ import {Schema} from "mongoose";
 const dataSchema = new Schema({
     data: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     }
 });
 

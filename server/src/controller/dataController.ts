@@ -26,3 +26,15 @@ export const getMetaData = async (req: Request, res: Response) => {
     });
 }
 
+export const getMetaDatas = async (req: Request, res: Response) => {
+
+    const data = await DataModel.find();
+    const datas = [];
+    for (let i = 0; i < data.length; i++) {
+        const tmp = JSON.parse(data[i].data);
+        datas.push(tmp);
+    }
+    res.status(200).send({
+        datas
+    });
+}
