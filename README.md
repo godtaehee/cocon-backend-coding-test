@@ -235,3 +235,12 @@ GET / metadatas
   ![스크린샷 2021-06-21 오전 12 43 02](https://user-images.githubusercontent.com/44861205/122680416-f6bcea00-d229-11eb-8ada-2473b513c6b4.png)
 
 </details>
+
+<details>
+  <summary>MONGODB_URL</summary>
+
+![스크린샷 2021-06-21 오전 1 18 02](https://user-images.githubusercontent.com/44861205/122681293-882e5b00-d22e-11eb-9040-7d72540e98b9.png)
+
+포트와 함께 dotenv를 이용해 사용했습니다.
+
+</details>
