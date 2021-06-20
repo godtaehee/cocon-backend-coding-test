@@ -139,6 +139,14 @@ GET / metadatas
 - limit branch
 
 
+POST / meatadata
+
+![스크린샷 2021-06-21 오전 12 36 38](https://user-images.githubusercontent.com/44861205/122680128-bf9a0900-d228-11eb-8133-a2ad264f9695.png)
+
+
+GET / metadatas
+
+![스크린샷 2021-06-21 오전 12 37 04](https://user-images.githubusercontent.com/44861205/122680147-cf195200-d228-11eb-9f11-e24e52b87dfb.png)
 
 </details>
 
