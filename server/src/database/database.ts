@@ -2,7 +2,7 @@ import Mongoose from "mongoose";
 import dotenv from "dotenv";
 
 let database: Mongoose.Connection;
-dotenv.config({path:'./config/.env'});
+dotenv.config({path: './config/.env'});
 export const connect = () => {
     const uri = process.env.MONGODB_URL;
     if (database) {

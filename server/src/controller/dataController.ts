@@ -4,16 +4,17 @@ import {DataModel} from "../model/dataModel";
 
 
 function helper(obj:any, property:string) {
-
     return obj.hasOwnProperty(property) ? obj[property] : '';
 }
 
 export const getMetaData = async (req: Request, res: Response) => {
 
-    res.set({
-        'Accept':'application/json',
-        'Content-Type':'application/json'
-    });
+    if(req.headers["accept"] !== "application/json" || req.headers["content-type"] !== "application/json") {
+        return res.status(500).send({
+            message: "Header is not application/json"
+        });
+    }
+
     const {url} = req.body;
 
     ogs({url:url}, async (error, result) => {
@@ -44,7 +45,11 @@ export const getMetaData = async (req: Request, res: Response) => {
 
 export const getMetaDatas = async (req: Request, res: Response) => {
 
-    res.set('Accept','application/json');
+    if(req.headers["accept"] !== "application/json") {
+        return res.status(500).send({
+            message: "Header is not application/json"
+        });
+    }
 
     const datas = await DataModel.find();
     const responseDatas = [];

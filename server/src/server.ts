@@ -4,7 +4,7 @@ import dataRouter from "./router/dataRouter";
 import dotenv from "dotenv";
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 dotenv.config({path:'./config/.env'});
 
