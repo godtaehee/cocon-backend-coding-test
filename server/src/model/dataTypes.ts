@@ -1,3 +1,3 @@
 export interface IData {
-    data: string
+    data: string;
 }
