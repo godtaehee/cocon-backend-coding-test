@@ -6,18 +6,23 @@ const dataSchema = new Schema({
     },
     description: {
         type: String,
+        default: ''
     },
     image: {
-        type: String
+        type: String,
+        default: ''
     },
     publisher: {
-        type: String
+        type: String,
+        default: ''
     },
     title: {
-        type: String
+        type: String,
+        default: ''
     },
     url: {
-        type: String
+        type: String,
+        default: ''
     }
 });
 

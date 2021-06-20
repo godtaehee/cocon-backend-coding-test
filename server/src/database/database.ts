@@ -1,12 +1,14 @@
 import Mongoose from "mongoose";
+import dotenv from "dotenv";
+
 let database: Mongoose.Connection;
+dotenv.config({path:'./config/.env'});
 export const connect = () => {
-    // add your own uri below
-    const uri = "mongodb+srv://root:root@cocon-backend-coding-te.9kn59.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = process.env.MONGODB_URL;
     if (database) {
         return;
     }
-    Mongoose.connect(uri, {
+    Mongoose.connect(`${uri}`, {
         useNewUrlParser: true,
         useFindAndModify: true,
         useUnifiedTopology: true,
