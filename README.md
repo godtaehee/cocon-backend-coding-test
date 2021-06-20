@@ -110,6 +110,10 @@ $ curl -X GET -H 'Accept: application/json' "http://localhost:3000/metadatas" | 
 - prettier
 
 
+## 본격적으로 들어가기에 앞서..
+
+> 처음의 예시를 봤을땐 'data', 'description', 'image', 'publisher', 'title', 'url'으로 스키마가 정해져있는줄 인식하고 있었는데 처음 open-graph-scraper로 MetaData를 크롤링 해왔을때 사이트마다 각각 다른 응답을 받을수 있었습니다. 그래서 스키마를 하나로 정할수 없을것같다는 판단을 하게되었고 그렇게 고민하다가 정한 방법이 `Strig`혹은 `BSON`으로 변환해 한개의 `data`라는 필드를 가진 몽고DB 스키마에 저장하고 메타데이터를 GET요청으로 가져올때는 디비에 저장된 데이터를 다시 JSON형태로 변환하여 보여주는 방식을 택했습니다 그 경우가 `main`브랜치에 작업한 내용이며 `limit`브랜치는 예시에 나와있는 6개의 필드를 스키마로 정하여 작업을 진행했습니다. 이렇듯 두개의 차이를 설명드려야 브랜치마다 어떻게 다르게 구현했는지를 알려드릴수 있을것 같아 남기게 됬습니다.
+
 ## Implements
 
 - 아래와 같이 eslint/prettier 설정 완료했습니다.
