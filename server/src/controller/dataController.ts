@@ -14,20 +14,23 @@ export const getMetaData = async (req: Request, res: Response) => {
 
 
     ogs({url}, async (err, ret) => {
-        result = ret;
-        if (err) {
-            res.status(500).send({
-                message: "Error Occurred"
-            });
+        try {
+            result = ret;
+            if (err) {
+                res.status(500).send({
+                    message: "Error Occurred"
+                });
+            }
+
+            const stringResult = JSON.stringify(ret);
+            const dataModel = new DataModel({data: stringResult});
+            await dataModel.save();
+            res.status(200).send(
+                stringResult
+            );
+        } catch (e) {
+            res.status(500).send(e.toString());
         }
-
-        const stringResult = JSON.stringify(ret);
-        const dataModel = new DataModel({data: stringResult});
-        await dataModel.save();
-
-        res.status(200).send({
-            dataModel
-        });
     });
 }
 
@@ -41,7 +44,7 @@ export const getMetaDatas = async (req: Request, res: Response) => {
         const tmp = JSON.parse(data[i].data);
         datas.push(tmp);
     }
-    res.status(200).send({
+    res.status(200).send(
         datas
-    });
+    );
 }
