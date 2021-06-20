@@ -93,3 +93,28 @@ $ curl -X GET -H 'Accept: application/json' "http://localhost:3000/metadatas" | 
 2. GitHub `cocon-backend-coding-test` repository의 [Settings] - [Manage access]에서 Collaborator로 [mint-seoul](http://github.com/mint-seoul) 계정을 추가합니다.
 3. [cocon@blacktangerine.kr](mailto:cocon@blacktangerine.kr) 이메일로 GitHub `cocon-backend-coding-test` repository 링크를 제출합니다.
 </details>
+
+## 사용 IDE
+
+- Webstorm
+
+## 기술 스택
+
+- Node.js
+- TypeScript
+- Docker
+
+## Plugin
+
+- Eslint
+- prettier
+
+
+## Implements
+
+- 아래와 같이 eslint/prettier 설정 완료했습니다.
+  
+  ![스크린샷 2021-06-20 오후 10 09 55](https://user-images.githubusercontent.com/44861205/122675408-409ad580-d214-11eb-9594-cf7a18a62b04.png)
+
+- 요청 헤더에 맞는 요청은 Reject
+- 
