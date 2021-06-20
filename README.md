@@ -121,4 +121,28 @@ $ curl -X GET -H 'Accept: application/json' "http://localhost:3000/metadatas" | 
   ![스크린샷 2021-06-20 오후 10 09 55](https://user-images.githubusercontent.com/44861205/122675408-409ad580-d214-11eb-9594-cf7a18a62b04.png)
 
 - 요청 헤더에 맞는 요청은 Reject
-- 
+
+<details>
+  <summary>PostMan 결과</summary>
+
+
+</details>
+
+<details>
+  <summary>MongoDB 저장된 모습</summary>
+- data Schema
+
+![스크린샷 2021-06-21 오전 12 20 30](https://user-images.githubusercontent.com/44861205/122679927-dd1aa300-d227-11eb-8894-7d952098edd8.png)
+
+- limitData Schema
+
+![스크린샷 2021-06-21 오전 12 20 38](https://user-images.githubusercontent.com/44861205/122679938-ec99ec00-d227-11eb-90a7-451485765a08.png)
+
+
+
+</details>
+
+
+<details>
+  <summary>Docker 결과</summary>
+</details>
