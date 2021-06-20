@@ -167,4 +167,18 @@ GET / metadatas
 
 <details>
   <summary>Docker 결과</summary>
+- docker Image (cocon image)
+
+![스크린샷 2021-06-21 오전 12 39 41](https://user-images.githubusercontent.com/44861205/122680230-2fa88f00-d229-11eb-8c3c-fc33043fad15.png)
+
+- `docker run -p 3000:3000 cocon` 실행시 POST, GET 요청
+
+- POST
+
+![스크린샷 2021-06-21 오전 12 42 23](https://user-images.githubusercontent.com/44861205/122680401-e7d63780-d229-11eb-92ff-d1982d1bb846.png)
+
+- GET
+
+  ![스크린샷 2021-06-21 오전 12 43 02](https://user-images.githubusercontent.com/44861205/122680416-f6bcea00-d229-11eb-8ada-2473b513c6b4.png)
+
 </details>
